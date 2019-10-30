@@ -129,7 +129,7 @@ class ResRNNBase(nn.Module):
             forward_hidden_list.append(forward_rnn_hidden)
             forward_rnn_out = self.drop(forward_rnn_out) + forward_res_out
         """ Shift the forward hidden states. """
-        forward_rnn_out = torch.cat([torch.zeros(1, forward_rnn_out.shape[1], forward_rnn_out.shape[2]), forward_rnn_out[:-1]], 0)
+        forward_rnn_out = torch.cat([torch.zeros(1, forward_rnn_out.shape[1], forward_rnn_out.shape[2], device=forward_rnn_out.device), forward_rnn_out[:-1]], 0)
 
         """ backward """
         for layer_id in range(len(init_hidden_list)):
@@ -142,7 +142,7 @@ class ResRNNBase(nn.Module):
         """ Reverse the order of hidden states """
         backward_rnn_out = torch.flip(backward_rnn_out, [0])
         """ Shift the backward hidden states """
-        backward_rnn_out = torch.cat([backward_rnn_out[1:], torch.zeros(1, backward_rnn_out.shape[1], backward_rnn_out.shape[2])], 0)
+        backward_rnn_out = torch.cat([backward_rnn_out[1:], torch.zeros(1, backward_rnn_out.shape[1], backward_rnn_out.shape[2], device=backward_rnn_out.device)], 0)
 
         """ concatenate output states """
         rnn_out = torch.cat([forward_rnn_out, backward_rnn_out], 2)
@@ -405,9 +405,9 @@ class RNNModel(nn.Module):
 
         """
         # output_forward: [seq_len, nbatch, nhid]
-        output_forward = torch.cat([torch.zeros(1, output_forward.shape[1], output_forward.shape[2]), output_forward[:-1]], 0)
+        output_forward = torch.cat([torch.zeros(1, output_forward.shape[1], output_forward.shape[2], device=output_forward.device), output_forward[:-1]], 0)
         # output_backward: [seq_len, nbatch, nhid]
-        output_backward = torch.cat([output_backward[1:], torch.zeros(1, output_backward.shape[1], output_backward.shape[2])], 0)
+        output_backward = torch.cat([output_backward[1:], torch.zeros(1, output_backward.shape[1], output_backward.shape[2], device=output_backward.device)], 0)
         """ concatenate the forward and backward hidden states """
         # output: [seq_len, nbatch, nhid*2]
         output = torch.cat([output_forward, output_backward], 2)
