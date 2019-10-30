@@ -19,7 +19,7 @@ The `train.py` script accepts the following arguments:
 - `--data`: Location of the data corpus. `type=str`, `default='./dataset'`.
 - `--glove`: Path to the glove embedding. `type=str`, `default=''`.
 - `--rnn_type`: Type of the recurrent net. You can select one from [RNN_TANH, RNN_RELU, LSTM, GRU, ResRNN_TANH, ResRNN_RELU, ResLSTM, ResGRU], `type=str`, `default='ResLSTM'`.
-- `--direction`: Type of language model direction. You can select one from [left2right, right2left, both]. `type=str`, `default='left2right'`.
+- `--direction`: Type of the language model direction. You can select one from [left2right, right2left, both]. `type=str`, `default='left2right'`.
 - `--wo_tok`: If = 1, the model ignores token embeddings. `type=bool`, `default=False`
 - `--wo_char`: If = 1, the model ignores character embeddings. `type=bool`, `default=False`
 - `--tok_emb`: The dimension size of word embeddings, `type=int`, `default=200`.
