@@ -1,7 +1,7 @@
 # RNN-based language models in pytorch
 
 This is an implementation of bidirectional language models[[1]](#cite1) based on multi-layer RNN (Elman[[2]](#cite2), GRU[[3]](#cite3), or LSTM[[4]](#cite4)) with residual connections[[5]](#cite5) and character embeddings[[6]](#cite6).
-After you train a language model, you can calculate perplexities for each input sentence based on the trained model.
+After you train a language model, you can calculate perplexities for each input **sentence** based on the trained model.
 You can also generate sentences from the trained model.
 When calculating perplexities, this code can receive input sentences through http requests.
 Note that some codes of this implementation are borrowed from [word-level language model example in pytorch](https://github.com/pytorch/examples).
