@@ -99,9 +99,9 @@ See the file `LICENSE`.
 
 ## References
 
-- <a name="cite1">[1]</a> Matthew E. Peters, Waleed Ammar, Chandra Bhagavatula and Russell Power. "Semi-supervised sequence tagging with bidirectional language models." arXiv preprint arXiv:1705.00108 (2017).
-- <a name="cite2">[2]</a> Tomáš Mikolov, Martin Karafiát, Lukáš Burget, Jan Černocký and Sanjeev Khudanpur. "Recurrent neural network based language model." Eleventh annual conference of the international speech communication association. 2010.
-- <a name="cite3">[3]</a> Junyoung Chung, Caglar Gulcehre, KyungHyun Cho and Yoshua Bengio. "Empirical evaluation of gated recurrent neural networks on sequence modeling." arXiv preprint arXiv:1412.3555 (2014).
-- <a name="cite4">[4]</a> Sundermeyer, Martin, Ralf Schlüter, and Hermann Ney. "LSTM neural networks for language modeling." Thirteenth annual conference of the international speech communication association. 2012.
-- <a name="cite5">[5]</a> Kaiming He, Xiangyu Zhang, Shaoqing Ren and Jian Sun. "Deep residual learning for image recognition." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
-- <a name="cite6">[6]</a> Yoon Kim, Yacine Jernite, David Sontag and Alexander M. Rush. "Character-aware neural language models." Thirtieth AAAI Conference on Artificial Intelligence. 2016.
+- <a name="cite1">[1]</a> Matthew E. Peters, Waleed Ammar, Chandra Bhagavatula and Russell Power. "**Semi-supervised sequence tagging with bidirectional language models.**" arXiv preprint arXiv:1705.00108 (2017).
+- <a name="cite2">[2]</a> Tomáš Mikolov, Martin Karafiát, Lukáš Burget, Jan Černocký and Sanjeev Khudanpur. "**Recurrent neural network based language model.**" Eleventh annual conference of the international speech communication association. 2010.
+- <a name="cite3">[3]</a> Junyoung Chung, Caglar Gulcehre, KyungHyun Cho and Yoshua Bengio. "**Empirical evaluation of gated recurrent neural networks on sequence modeling.**" arXiv preprint arXiv:1412.3555 (2014).
+- <a name="cite4">[4]</a> Sundermeyer, Martin, Ralf Schlüter, and Hermann Ney. "**LSTM neural networks for language modeling.**" Thirteenth annual conference of the international speech communication association. 2012.
+- <a name="cite5">[5]</a> Kaiming He, Xiangyu Zhang, Shaoqing Ren and Jian Sun. "**Deep residual learning for image recognition.**" Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
+- <a name="cite6">[6]</a> Yoon Kim, Yacine Jernite, David Sontag and Alexander M. Rush. "**Character-aware neural language models.**" Thirtieth AAAI Conference on Artificial Intelligence. 2016.
