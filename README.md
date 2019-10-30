@@ -53,15 +53,15 @@ Use `evaluation.py` for the evaluation.
 The `evaluation.py` script accepts the following arguments:
 
 
-- `--dict`, Location of the dictionary. `type=str`, `default='./models/dict.pkl'`.
-- `--load`, Prefix to model files. `type=str`, `default='./models/model'`.
-- `--outf`, Output file of preplexities for each sentence. `type=str`, `default='./output/ppl.txt'`.
-- `--input_text`, Path to the input file. `type=str`, `default='./dataset/test.txt'`.
-- `--seed`, Random seed. `type=int`, `default=1234`.
-- `--server`, Run as a server. `type=bool`, `default=False`.
-- `--host`, Host name. `type=str`, `default='localhost'`.
-- `--port`, Access port number. `type=int`, `default='8888'`.
-- `--cuda`, Use CUDA. `type=bool`, `default=False`.
+- `--dict`: Location of the dictionary. `type=str`, `default='./models/dict.pkl'`.
+- `--load`: Prefix to model files. `type=str`, `default='./models/model'`.
+- `--outf`: Output file of preplexities for each sentence. `type=str`, `default='./output/ppl.txt'`.
+- `--input_text`: Path to the input file. `type=str`, `default='./dataset/test.txt'`.
+- `--seed`: Random seed. `type=int`, `default=1234`.
+- `--server`: Run as a server. `type=bool`, `default=False`.
+- `--host`: Host name. `type=str`, `default='localhost'`.
+- `--port`: Access port number. `type=int`, `default='8888'`.
+- `--cuda`: Use CUDA. `type=bool`, `default=False`.
 - `--batch_size`: Batch size. `type=int`, `default=20`.
 - `--log-interval`: Report interval. `type=int`, `default=100`.
 
