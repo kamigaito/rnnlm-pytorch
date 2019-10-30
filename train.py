@@ -222,6 +222,8 @@ def main():
         model = models.RNNModel(params)
         # load pretraind model
         model.load_state_dict(torch.load(opts.pretrain + ".pt"))
+        model.freeze_emb()
+
     # save parameters
     with open(opts.save + ".params", mode='wb') as f:
         pickle.dump(params, f)

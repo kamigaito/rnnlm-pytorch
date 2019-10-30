@@ -311,6 +311,9 @@ class RNNModel(nn.Module):
             emb = torch.cat([emb_word, emb_char], dim=2)
         return emb
 
+    def freeze_emb(self):
+        self.word_encoder.weight.requires_grad=False
+
     def forward(self, batch, hidden):
         """
         Inputs
