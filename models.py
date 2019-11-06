@@ -313,6 +313,7 @@ class RNNModel(nn.Module):
 
     def freeze_emb(self):
         self.word_encoder.weight.requires_grad=False
+        self.decoder.weight.requires_grad=False
 
     def forward(self, batch, hidden):
         """
