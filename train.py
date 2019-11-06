@@ -71,7 +71,7 @@ def options():
     parser.add_argument('--save', type=str, default='./models/model',
                     help='prefix to save the final model')
     parser.add_argument('--dict', type=str, default='./models/dict.pkl',
-                    help='path to save the dictionary')
+                    help='path to (save/load) the dictionary')
     opts = parser.parse_args()
     return opts
 
@@ -199,7 +199,11 @@ def main():
     ###############################################################################
 
     corpus = data.Corpus(opts)
-    corpus.make_dict(opts.data)
+    if opts.pretrain == "":
+        corpus.make_dict(opts.data)
+    else:
+        corpus.load_dict()
+
     corpus.load_data(opts.data)
     with open(opts.dict, mode='wb') as f:
         pickle.dump(corpus.dictionary, f)
